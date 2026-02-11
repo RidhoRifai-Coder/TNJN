@@ -507,8 +507,8 @@ footer{
 
 <section id="kontak" class="contact">
     <h2>Hubungi Kami</h2>
-    <button class="wa">No.Telp: +621410526959</button>
-    <button class="email">Email: rifai.ahmaddoy@gmail.com</button>
+    <button class="wa" onclick="openWA()">WhatsApp</button>
+    <button class="email" onclick="openEmail()">Email</button>
 </section>
 
 <div class="slogan">
@@ -577,6 +577,17 @@ function selectSize(btn){
 function scrollToProduk(){
     document.getElementById("produk").scrollIntoView({behavior:"smooth"});
 }
+function openWA(){
+    window.open("https://api.whatsapp.com/send?phone=6281410526959", "_blank");
+}
+
+function openEmail(){
+    window.open(
+        "https://mail.google.com/mail/?view=cm&fs=1&to=rifai.ahmaddoy@gmail.com&su=Order%20TNJN&body=Halo%20TNJN%20saya%20ingin%20bertanya",
+        "_blank"
+    );
+}
+
 
 </script>
 
